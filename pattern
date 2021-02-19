@@ -6,8 +6,8 @@ public class Test {
 
 	public static void main(String[] args) {
 
-		//String input = "WELCOME";
-		String input = "WATER";
+		String input = "WELCOME";
+		//String input = "WATER";
 		
 		for(int i=input.length();i>=0;i--) {
 			int middle = input.length()/2;
@@ -17,12 +17,10 @@ public class Test {
 			for(int j=i;j<input.length();j++) {
 				if(middle == input.length()) {
 					middle = 0;
-					System.out.print(input.charAt(middle));
-					middle++;
-				}else {
-					System.out.print(input.charAt(middle));
-					middle++;
 				}
+					System.out.print(input.charAt(middle));
+					middle++;
+				
 				
 				
 			}
