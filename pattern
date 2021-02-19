@@ -1,0 +1,37 @@
+package com.test;
+
+import java.util.*;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		//String input = "WELCOME";
+		String input = "WATER";
+		
+		for(int i=input.length();i>=0;i--) {
+			int middle = input.length()/2;
+			for(int j=0;j<i;j++) {
+				System.out.print(" ");
+			}
+			for(int j=i;j<input.length();j++) {
+				if(middle == input.length()) {
+					middle = 0;
+					System.out.print(input.charAt(middle));
+					middle++;
+				}else {
+					System.out.print(input.charAt(middle));
+					middle++;
+				}
+				
+				
+			}
+			
+			System.out.println();
+		}
+		
+		
+		
+	}
+
+}
